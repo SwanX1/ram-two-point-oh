@@ -5,6 +5,7 @@
  - [ ] embed messages
  - [ ] logging mechanism
  - [ ] custom prefix
+ - [ ] new member welcome messages
  - [ ] add configs to everything
  - [ ] web interface for bot config
 

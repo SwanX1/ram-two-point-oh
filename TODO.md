@@ -38,3 +38,7 @@
 ### minecraft server status
  - [ ] choose api
  - [ ] default server address
+
+### tagged commands/custom commands
+ - [ ] add listener for commands
+ - [ ] command builder interface (in-app and web)

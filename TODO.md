@@ -9,6 +9,10 @@
  - [ ] add configs to everything
  - [ ] web interface for bot config
 
+### web interface
+ - [ ] create it
+ - [ ] add oauth for discord account validation
+
 ### database
  - [ ] implement connection
  - [ ] test connection on heroku

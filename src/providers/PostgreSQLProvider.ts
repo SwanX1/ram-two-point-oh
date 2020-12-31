@@ -2,7 +2,7 @@ import chalk from "chalk";
 import postgres, {
     Sql as SQLFunction,
     Options as PostgresOptions,
-} from "./PostgresTyped";
+} from "postgres";
 
 export default class PostgreSQLProvider {
     public sql: SQLFunction<Record<string, unknown>>;

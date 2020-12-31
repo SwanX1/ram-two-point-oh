@@ -7,7 +7,6 @@
   "author": "SwanX1 <swanx1official@gmail.com>",
   "license": "Apache-2.0",
   "scripts": {
-    "prepare": "npm run build",
     "build": "tsc",
     "start": "cd lib && node ./index.js",
     "watch": "tsc --watch",

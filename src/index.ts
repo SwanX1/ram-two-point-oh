@@ -44,10 +44,11 @@ client.on("ready", () => {
 
 if (process.argv.includes("--heroku")) {
     setInterval(() => {
-        console.log(chalk`{green [Heroku]} Pinging self...`);
         axios
             .get(`http://${process.env.HOSTNAME}:${process.env.PORT}`)
-            .then(() => {})
+            .then(() => {
+                console.log(chalk`{green [Heroku]} Pinged self...`);
+            })
             .catch((err) =>
                 console.log(
                     chalk`{green [Heroku]} Error thrown while pinging self!`,

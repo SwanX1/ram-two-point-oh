@@ -11,7 +11,7 @@ import path from "path";
 export default class WebApp {
     public app: Express;
     public apiapp: WebAPIRouter;
-    
+
     public log: typeof console.log;
     public info: typeof console.info;
     public warn: typeof console.warn;
@@ -19,7 +19,6 @@ export default class WebApp {
     public fatal: typeof console.error;
     public debug: typeof console.debug;
     public logPrefix: string;
-
 
     constructor(public client: RamClient, app?: express.Express) {
         this.client = client;
@@ -57,15 +56,15 @@ export default class WebApp {
                 max: 120,
             })
         );
-        
+
         this.apiapp = new WebAPIRouter(this.client);
         app.use("/api", this.apiapp.app);
-        app.use(express.static(path.join(__dirname, "../../../resources/public")));
+        app.use(
+            express.static(path.join(__dirname, "../../../resources/public"))
+        );
         app.use((req, res, next) => {
             res.status(404);
             next();
         });
     }
-
-    
 }

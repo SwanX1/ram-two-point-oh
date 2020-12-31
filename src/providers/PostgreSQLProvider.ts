@@ -1,6 +1,8 @@
-import chalk from 'chalk';
-import postgres, { Sql as SQLFunction, Options as PostgresOptions } from 'postgres';
-
+import chalk from "chalk";
+import postgres, {
+    Sql as SQLFunction,
+    Options as PostgresOptions,
+} from "postgres";
 
 export default class PostgreSQLProvider {
     public sql: SQLFunction<Record<string, unknown>>;
@@ -25,6 +27,7 @@ export default class PostgreSQLProvider {
     }
 
     async setup(): Promise<void> {
-        await this.sql`CREATE TABLE IF NOT EXISTS rambot_guild_config (id VARCHAR(256) PRIMARY KEY, value JSON)`;
+        await this
+            .sql`CREATE TABLE IF NOT EXISTS rambot_guild_config (id VARCHAR(256) PRIMARY KEY, value JSON)`;
     }
 }

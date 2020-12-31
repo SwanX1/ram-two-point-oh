@@ -21,7 +21,8 @@ export default class EvalCommand extends Command {
                 try {
                     // eslint-disable-next-line no-eval
                     const output = eval(
-                        ((message.util as CommandUtil).parsed as ParsedComponentData).content as string
+                        ((message.util as CommandUtil)
+                            .parsed as ParsedComponentData).content as string
                     );
                     reply.edit(
                         new MessageEmbed()

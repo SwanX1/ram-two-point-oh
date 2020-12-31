@@ -63,9 +63,9 @@ export default class APIUser extends User {
             Promise.reject(error)
         )) as AxiosResponse<RESTPostOAuth2AccessTokenResult>;
 
-        return this.discordAuthorization = {
+        return (this.discordAuthorization = {
             expires_at: Date.now() + authResponse.data.expires_in,
             ...authResponse.data,
-        };
+        });
     }
 }

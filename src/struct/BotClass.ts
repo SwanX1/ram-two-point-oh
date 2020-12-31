@@ -8,7 +8,7 @@ import {
 import PostgreSQLProvider from "../providers/PostgreSQLProvider";
 import WebApp from "./web/WebApp";
 
-import { Sql as SQLFunction, Options as PostgresOptions } from 'postgres';
+import { Sql as SQLFunction, Options as PostgresOptions } from "postgres";
 
 export interface RamOptions {
     database: PostgresOptions<Record<string, unknown>>;

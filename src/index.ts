@@ -55,7 +55,7 @@ if (process.argv.includes("--heroku")) {
                     err
                 )
             );
-    }, 1200);
+    }, 20 * 60 * 1000);
 }
 
 process.on("SIGUSR2", processShutdown).on("SIGTERM", processShutdown);

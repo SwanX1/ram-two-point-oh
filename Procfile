@@ -1,0 +1,1 @@
+web: npm run start --heroku # heroku flag for deployment to heroku

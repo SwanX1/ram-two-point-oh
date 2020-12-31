@@ -7,14 +7,14 @@
  - [ ] custom prefix
  - [ ] new member welcome messages
  - [ ] add configs to everything
- - [ ] web interface for bot config
 
 ### web interface
- - [ ] create it
- - [ ] add oauth for discord account validation
+ - [ ] create frontend
+ - [x] create backend api
+ - [x] add oauth for discord account validation
 
 ### database
- - [ ] implement connection
+ - [x] implement connection
  - [ ] test connection on heroku
 
 ### announcements

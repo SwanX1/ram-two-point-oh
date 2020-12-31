@@ -6,7 +6,8 @@
     "esModuleInterop": true,
     "outDir": "./lib",
     "strict": true,
-    "alwaysStrict": true
+    "alwaysStrict": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src"],
   "exclude": ["node_modules"]

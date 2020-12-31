@@ -1,6 +1,16 @@
 <h1 align="center">RamBot</h1>
 
-### read the [todo](./TODO.md)
+### [TODO](./TODO.md)
+
+## Setup
+ - Create a Discord application
+ - Create a PostgreSQL database
+ - Fill out `.env.example` file (rename it to `.env`)
+
+## Contributing
+ - Make sure to format the source code using `npm run format` and check that there are no errors with `npm run lint` and `npm run build`
+ - Make a pull request
+ - That's really it
 
 <br><br><br>
 

@@ -16,7 +16,7 @@
     ],
     "rules": {
         "@typescript-eslint/no-var-requires": "off",
-        "no-empty-function": "error",
+        "@typescript-eslint/no-empty-function": "error",
         "no-eval": "error",
         "no-extra-parens": "off",
         "@typescript-eslint/no-extra-parens": "warn",

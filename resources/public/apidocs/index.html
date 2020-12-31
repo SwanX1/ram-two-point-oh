@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>API Endpoints</title>
+        <style>
+            * {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            h6 {
+                margin: 0;
+            }
+
+            li {
+                margin-bottom: 10;
+            }
+        </style>
+    </head>
+    <body>
+        Complete list of endpoints:
+        <ul>
+            <li>/api
+                <ul>
+                    <li>
+                        /auth?code={code}
+                        <h6>{code} - discord oauth code from redirect</h6>
+                    </li>
+                    <li>
+                        /endpoints
+                    </li>
+                    <li>
+                        /info/{type}
+                        <h6>{type} - one of 'all' | 'client' | 'process'</h6>
+                    </li>
+                    <li>
+                        /token
+                        <ul>
+                            <li>
+                                /refresh/{token}
+                                <h6>{token} - from /api/auth</h6>
+                            </li>
+                            <li>
+                                    /validate/{token}
+                                <h6>{token} - from /api/auth</h6>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

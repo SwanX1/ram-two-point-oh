@@ -24,12 +24,13 @@ export default class EvalCommand extends Command {
                         ((message.util as CommandUtil)
                             .parsed as ParsedComponentData).content as string
                     );
+                    const outputString = output.toString() as string;
                     reply.edit(
                         new MessageEmbed()
                             .setTitle(`Evaluated code...`)
                             .addField(
                                 "Returns",
-                                `\`\`\`javascript\n${output}\`\`\``
+                                `\`\`\`javascript\n${outputString.substr(0, 1004)}${outputString.length > 1004 ? '...' : ''}\`\`\``
                             )
                             .setColor(Util.resolveColor("GREEN"))
                     );

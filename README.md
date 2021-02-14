@@ -1,5 +1,7 @@
 <h1 align="center">RamBot</h1>
 
+# ⚠ DEPRECATED AND REPLACED BY [SwanX1/Vesalius](https://github.com/SwanX1/Vesalius)
+
 ### [TODO](./TODO.md)
 
 ## Setup
